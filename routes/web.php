@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', 'DashboardController@login');
-Route::post('/login', 'LoginController@login');
-Route::get('/dashboard', 'DashboardController@index');
+Route::get('/', function () {
+    return view('welcome');
+});
